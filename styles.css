@@ -281,29 +281,6 @@ body {
 }
 
 
-
-@keyframes countUp {
-  from { 
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to { 
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.stat-number {
-  animation: countUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-
-
-
-
-
-
-
 /* Stats Grid */
 .stats-grid {
   display: grid;
@@ -566,7 +543,7 @@ body {
   align-items: flex-end;
   gap: 30px;
   margin-bottom: 40px;
-  padding: 40px 20px 140px 20px;
+  padding: 40px 20px 80px 20px;
   background: var(--bg-primary);
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
