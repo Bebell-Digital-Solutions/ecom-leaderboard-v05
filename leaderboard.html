@@ -134,42 +134,6 @@
     <script src="app.js"></script>
     <script src="leaderboard.js"></script>
 
-
-<script>
-// Counting animation function
-function animateStats() {
-  const stats = document.querySelectorAll('.stat-number');
-  
-  stats.forEach(stat => {
-    const target = +stat.getAttribute('data-target');
-    const duration = 1500; // ms
-    const start = 0;
-    const increment = target / (duration / 16); // ~60fps
-    
-    let current = start;
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        clearInterval(timer);
-        current = target;
-      }
-      stat.textContent = Math.floor(current).toLocaleString();
-    }, 16);
-    
-    stat.classList.add('animate');
-  });
-}
-
-// Trigger when stats are visible
-document.addEventListener('DOMContentLoaded', function() {
-  // For demo - you might want to trigger this on scroll
-  // or when the dashboard loads
-  setTimeout(animateStats, 500);
-});
-</script>
-
-
-
     
 </body>
 </html>
