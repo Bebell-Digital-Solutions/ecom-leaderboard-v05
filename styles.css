@@ -479,11 +479,9 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: white;
-  /* Animation properties */
-  transition: all 1.5s ease-out;
-  transform: translateY(20px);
-  opacity: 0;
 }
+
+
 
 /* Animation trigger class */
 .stat-number.animate {
