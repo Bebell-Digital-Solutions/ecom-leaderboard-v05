@@ -92,7 +92,7 @@ body {
 
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 20px;
   flex-grow: 1;
@@ -478,6 +478,16 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: white;
+  /* Animation properties */
+  transition: all 1.5s ease-out;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* Animation trigger class */
+.stat-number.animate {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .stat-label {
@@ -525,7 +535,7 @@ body {
   font-weight: 500;
 }
 
-/* New Podium Styles */
+/* Podium Styles */
 .podium {
   display: flex;
   justify-content: center;
